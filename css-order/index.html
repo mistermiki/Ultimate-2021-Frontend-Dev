@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS ordering</title>
+    <style>
+        p {
+            color: brown;
+        }
+        #text-color-blue {
+            color: black;
+        }
+        .text-color-pink {
+            color: pink;
+        }
+
+        #text-color-green {
+            color: green;
+        }
+
+        .special {
+            color: red;
+            /*color: red !important;*/
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet architecto blanditiis deserunt eos esse et, id impedit ipsam iure labore magni molestiae molestias pariatur quasi sapiente tempora velit veniam?
+    </p>
+    <p class="text-color-pink">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet architecto blanditiis deserunt eos esse et, id impedit ipsam iure labore magni molestiae molestias pariatur quasi sapiente tempora velit veniam?
+    </p>
+    <p id="text-color-blue">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet architecto blanditiis deserunt eos esse et, id impedit ipsam iure labore magni molestiae molestias pariatur quasi sapiente tempora velit veniam?
+    </p>
+    <p class="text-color-pink">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet architecto blanditiis deserunt eos esse et, id impedit ipsam iure labore magni molestiae molestias pariatur quasi sapiente tempora velit veniam?
+    </p>
+    <p class="text-color-pink">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet architecto blanditiis deserunt eos esse et, id impedit ipsam iure labore magni molestiae molestias pariatur quasi sapiente tempora velit veniam?
+    </p>
+    <p class="text-color-pink">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet architecto blanditiis deserunt eos esse et, id impedit ipsam iure labore magni molestiae molestias pariatur quasi sapiente tempora velit veniam?
+    </p>
+    <p class="text-color-pink">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet architecto blanditiis deserunt eos esse et, id impedit ipsam iure labore magni molestiae molestias pariatur quasi sapiente tempora velit veniam?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet architecto blanditiis deserunt eos esse et, id impedit ipsam iure labore magni molestiae molestias pariatur quasi sapiente tempora velit veniam?
+    </p>
+    <p id="text-color-green" class="text-color-pink special">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet architecto blanditiis deserunt eos esse et, id impedit ipsam iure labore magni molestiae molestias pariatur quasi sapiente tempora velit veniam?
+    </p>
+</body>
+</html>
